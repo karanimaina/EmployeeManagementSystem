@@ -23,7 +23,6 @@ public class EmployeeService implements EmployeeInterface {
         return Mono.fromCallable(() -> {
             Employee employee = Employee.builder()
                     .departmentId(employeeRecord.departmentId())
-
                     .name(employeeRecord.name())
                     .position(employeeRecord.position())
                     .age(employeeRecord.age())
