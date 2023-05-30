@@ -4,7 +4,6 @@ import lombok.Builder;
 @Builder
 
 
-
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public record UniversalResponse (int  status, Object data, String message){
   public static UniversalResponseBuilder builder(){
